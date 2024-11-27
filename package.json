@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/magjac/graphviz-visual-editor.git"
+    "url": "https://github.com/CongLeSolutionX/magjac_graphviz-visual-editor.git"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -50,6 +50,8 @@
     "typeface-roboto": "^1.1.13"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --max_old_space_size=4096 start",
     "start:coverage": "react-scripts --max_old_space_size=4096 -r @cypress/instrument-cra start",
     "build": "react-scripts --max_old_space_size=4096 build",
